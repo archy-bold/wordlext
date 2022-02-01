@@ -37,6 +37,9 @@ export default function Home() {
                 id="main-js"
                 strategy="afterInteractive"
                 src="/js/main.e65ce0a5.js"
+                onLoad={() => {
+                    window.dispatchEvent(new Event('resize'));
+                }}
             />
             <game-app></game-app>
         </>
