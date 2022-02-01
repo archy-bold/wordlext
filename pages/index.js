@@ -26,7 +26,7 @@ export default function Home() {
                 <link href="/images/wordle_logo_32x32.png" rel="icon shortcut" sizes="3232" />
                 <link href="/images/wordle_logo_192x192.png" rel="apple-touch-icon" />
             </Head>
-            <Script>
+            <Script id="set-hash-js">
               {`(function () {
                 /* Defining the hash before the main bundle allows the bundle access window.hash */
                 window.wordle = window.wordle || {};
